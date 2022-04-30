@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=, initial-scale=1.0">
     <link rel="stylesheet" href="css/main.css">
-    <title>document</title>
+   
+    <title>My Firstever Landing Page</title>
 </head>
 <body>
     <div class="navbar">
@@ -14,10 +15,10 @@
 
             <img id="mobile-cta" class="mobile-menu" src="./images/menu.svg" alt="open navigation">
 
-            <nav class="primary-nav">
+            <nav>
                 <img id="mobile-exit" class="mobile-menu-exit" src="./images/exit.svg" alt="close navigation">
 
-                <ul>
+                <ul class="primary-nav">
                     <li class="current"><a href="#">HOME</a></li>
                     <li><a href="#">FEATURES</a></li>
                     <li><a href="#">PRICING</a></li>
@@ -51,6 +52,7 @@
             </div>
             <img src="./images/illustration.svg" class="hero-img" alt="illustration">
         </div>
+        
 
     </section>
 
@@ -74,7 +76,7 @@
                 <li>
                     <img src="./images/DSC_7503.JPG" alt="photo of mr Doo">
                     <blockquote>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi obcaecati fuga sit deserunt. Eligendi exercitationem aliquid dignissimos doloribus fugiat et vitae quidem cumque culpa voluptates. Quaerat cupiditate eaque officiis fugit.
+                        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi obcaecati fuga sit deserunt. Eligendi exercitationem aliquid dignissimos doloribus fugiat et vitae quidem cumque culpa voluptates. Quaerat cupiditate eaque officiis fugit."
                     </blockquote>
                     <cite>MR Doo</cite>
                 </li>
@@ -108,7 +110,7 @@
                     <input type="text" id="name" name="name" placeholder="Your Name">
 
                     <label for="email">Email</label>
-                    <input type="text" id="email" name="email" placeholder="Enter Your Email">  
+                    <input type="email" id="email" name="email" placeholder="Enter Your Email">  
 
                     <label for="message">Message</label>
                     <textarea name="message" id="message" cols="30" rows="10"> Type a Message</textarea>
@@ -123,27 +125,12 @@
 
             </div>
         </div>
+       
     </section>
+    <footer>&copy; Copyright <span class="date"></span>  all right reserved Doochukbeni</footer>
 
 
-    <script>
-
-        const mobileBtn =document.getElementById('mobile-cta')
-                nav = document.querySelector('nav')
-                mobileBtnExit =document.getElementById('mobile-exit');
-
-
-        mobileBtn.addEventlistener('click', () => {
-            nav.classList.add('menu-btn');
-        })
-
-        mobileBtnExit.addEventlistener('click', () => {
-            nav.classList.remove('menu-btn');
-        })
-
-
-
-    </script>
+  <script src="script.js"></script>
     
 </body>
 </html>
